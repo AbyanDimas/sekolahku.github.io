@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+p {
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.jurusan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+.card {
+  width: 30%;
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 10px; 
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: cover;
+}
+.card h3 {
+  text-align: center;
+}
+.card p {
+  display: none; 
+  padding: 10px;
+  text-align: center;
+
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  .container {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    width: 491;
+  }
+  h1 {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .jurusan {
+    display: grid;
+  }
+  .card {
+    width: 350px;
+    margin: 70px;
+  }
+  .card h3 {
+    font-size: 15px;    
+  }
+  .container {
+    width: 489px;
+  }
+}
+  
+
+
+
