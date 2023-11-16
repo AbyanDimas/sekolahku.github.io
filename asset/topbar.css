@@ -1,0 +1,26 @@
+.top-bar {
+    background-color: #6d6d6d; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 10px 0; /* Ruang polos atas dan bawah */
+    text-align: center; /* Teks rata tengah */
+    border-radius: 10px;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+  }
+  
+  .top-bar ul {
+    list-style: none; /* Hapus daftar bawaan */
+    padding: 0;
+  }
+            
+  .top-bar li {
+    display: inline; /* Membuat daftar horizontal */
+    margin: 0 20px; /* Jarak antar elemen daftar */
+  }
+  
+  .top-bar a {
+    text-decoration: none; /* Hapus garis bawah tautan */
+    color: #fff; /* Warna tautan */
+    
+  }
+

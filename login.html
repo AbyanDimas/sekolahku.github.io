@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS untuk tampilan halaman login */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.5s; /* Transisi perubahan transformasi */
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .login-form {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .login-form input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .login-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .daftar-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+.container:hover {
+    transform: scale(1.05); /* Perbesar elemen saat mouse hover */
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="image-container">
+            <img width="60px" src="./gambar/1.jpg" alt="Background Image">
+        </div>
+
+        <div class="header">
+            <h1>Silakan Login</h1>
+        </div>
+
+        <div class="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button class="login-button">Login</button>
+            <button class="back-button">Kembali</button>
+            <button class="daftar-button">Daftar</button>
+        </div>        
+
+    </div>
+
+    <script>
+        const backButton = document.querySelector('.back-button');
+
+        backButton.addEventListener('click', function() {
+            window.history.back();
+        });
+      
+        const loginButton = document.querySelector('.login-button');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+
+        loginButton.addEventListener('click', function() {
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+
+            // Di sini Anda dapat menambahkan logika otentikasi atau tindakan lain yang sesuai
+            if (username === 'user' && password === 'password') {
+                alert('Login berhasil!');
+                window.location.href = 'beranda.html'; // Redirect ke halaman selanjutnya setelah login berhasil
+            } else {
+                alert('Login gagal. Periksa kembali username dan password Anda.');
+            }
+        });
+    </script>
+
+</body>
+</html>
